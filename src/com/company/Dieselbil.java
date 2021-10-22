@@ -50,10 +50,6 @@ public class Dieselbil extends Bil {
         return tillæg;
     }
 
-    public static void hej(){
-
-    }
-
     @Override
     public String toString() {
         return "\n\nDieselbilen:" +
