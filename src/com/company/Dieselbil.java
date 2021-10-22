@@ -33,21 +33,25 @@ public class Dieselbil extends Bil {
 
     @Override
     public double beregnGrønEjerafgift() {
-        double sum = 0;
+        double tillæg = 0;
         if (harPartikelfilter == false) {
-            sum += 1000;
+            tillæg += 1000;
         } if (kmPrL >= 20 && kmPrL <= 50){
-            sum += 130;
+            tillæg += 130;
         } else if (kmPrL >= 15 && kmPrL < 20){
-            sum += 1390;
+            tillæg += 1390;
         } else if (kmPrL >= 10 && kmPrL < 15){
-            sum += 1850;
+            tillæg += 1850;
         } else if (kmPrL >= 5 && kmPrL < 10) {
-            sum += 2770;
+            tillæg += 2770;
         } else if (kmPrL < 5) {
-            sum += 15260;
+            tillæg += 15260;
         }
-        return sum;
+        return tillæg;
+    }
+
+    public static void hej(){
+
     }
 
     @Override

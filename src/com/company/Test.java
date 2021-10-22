@@ -15,6 +15,8 @@ public class Test {
         garage.tilføjBiler(dieselbil);
 
         System.out.println(garage);
+        System.out.println("\nSamlet grønne afgift for alle bilerne i garagen: " + garage.beregnGrønEjerafgift());
+
 
     }
 }
